@@ -7,20 +7,16 @@
     android:orientation="vertical"
     android:background="#FFF3E0">
 
-    <!-- Header -->
-    <TextView
-        android:id="@+id/titleText"
+    <!-- Toolbar (Replaces TextView Header) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Feedback List"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="16dp"
-        android:textColor="#FFFFFF"
         android:background="#FF7A00"
-        android:elevation="4dp"
-        android:layout_marginBottom="8dp" />
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Feedback List"
+        app:titleTextColor="#FFFFFF"
+        android:elevation="4dp" />
 
     <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView

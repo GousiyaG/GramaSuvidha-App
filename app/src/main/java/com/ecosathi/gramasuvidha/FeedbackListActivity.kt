@@ -1,8 +1,10 @@
 package com.ecosathi.gramasuvidha
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
@@ -18,9 +20,15 @@ class FeedbackListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feedback_list)
 
-        recyclerView = findViewById(R.id.recyclerView)
+        // 🔹 Toolbar setup (BACK BUTTON)
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        // 🔹 RecyclerView setup
+        recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
+
         adapter = FeedbackAdapter(feedbackList)
         recyclerView.adapter = adapter
 
@@ -55,5 +63,14 @@ class FeedbackListActivity : AppCompatActivity() {
                 Toast.makeText(this@FeedbackListActivity, "Error loading data ❌", Toast.LENGTH_SHORT).show()
             }
         })
+    }
+
+    // 🔹 BACK BUTTON FUNCTION
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
