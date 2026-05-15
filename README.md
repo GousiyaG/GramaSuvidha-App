@@ -1,35 +1,47 @@
-# Grama Suvidha App
+# Grama Suvidha – Village Project Tracking & Feedback System
 
-The Grama Suvidha App is a tool for people in villages. It helps them know what is happening in their village. This app was made for Android phones. The main goal of Grama Suvidha is to make things clear and easy to understand. It also helps people talk to each other about projects in their village.
+## Description
+
+The Grama Suvidha system is something that can really help people. It is an Android application that lets citizens see what the government is doing in their village and tell them what they think. This makes things more open and honest between the government and people who live in villages.
 
 ## Features
 
-- You can see what projects are going on in your village
+- People can look at the projects that are happening in their village
 
-- You can tell us what you think about these projects
+- They can tell the government what they think about these projects
 
-- You can see what other people think about the projects
+- There is a system for users to log in
 
-- We use Firebase Authentication so you can log in safely
-
-- You get to see information as soon as it is available because we use Firebase Realtime Database
+- The information is always up to date because it uses something called Firebase
 
 ## Technologies Used
 
 - We used Kotlin to make the app
 
-- XML is what we used to design how the app looks
+- We also used XML
 
-- Firebase Authentication helps keep your account safe
+- The app was made using Android Studio
 
-- Firebase Realtime Database gives you the latest information
+- We used Firebase to help people log in and to keep the information up to date
 
-- We built the app using Android Studio
+## How to Run
 
-## Purpose
+1. First you need to open the project, in Android Studio
 
-The Grama Suvidha App is here to help people in villages. It keeps them informed about what's going on. People can also give their feedback on Grama Suvidha. This helps make sure the people in charge are doing their job correctly. It is a way to make things better, in the villages.
+2. Then you need to sync something called Gradle
 
-## Developed By
+3. Next you need to connect a phone or a special computer that acts like a phone
 
-Gousiya G
+4. After that you can run the app and see how it works
+
+
+
+## Future Improvements
+
+- We want to make a special place where administrators can see what is going on
+
+- We want to send people messages when something new happens
+
+- We want to make the app look and feel better for the people who use it
+
+The Grama Suvidha system will keep getting better with these improvements to the Grama Suvidha system.
